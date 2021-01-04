@@ -10,13 +10,18 @@ body {
     font-family: 'RalewayRegular', Arial, serif;
     font-size: 16px;
     margin: 0;
-    padding: 40px;
 }
 h1, h2, h3 {
     font-family: 'RalewayBold', Arial, serif;
 }
-h1 {
+h1, h2 {
     font-size: 22px;
+}
+h3 {
+    font-size: 18px;
+}
+header, main, footer {
+    padding: 40px;
 }
 
 /*MENU : LOGO + NAV BARRE*/
@@ -96,17 +101,21 @@ i.fas.fa-map-marker-alt {
 /*FOOTER*/
 footer {
     display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
-    padding: 10px;
 }
-.footer {
+.sectionFooter {
     flex-direction: column;
+    padding-right: 220px;
 }
-.footer > ul {
+.sectionFooter > ul {
     flex-direction: column;
-}
-.footer > ul > li {
-    list-style-type: none;
     padding-left: 0px !important;
+}
+.sectionFooter > ul > li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+.sectionFooter > ul > li > a {
+    text-decoration: none;
+    color: black;
 }
