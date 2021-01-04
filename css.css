@@ -1,0 +1,174 @@
+/*POLICES*/
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('typo/Raleway-Regular.ttf') format('truetype');
+    font-family: 'RalewayBold';
+    src: url('typo/Raleway-Bold.ttf') format('truetype');
+}
+/*GENERAL*/
+body {
+    font-family: 'RalewayRegular', Arial, serif;
+    font-size: 16px;
+    margin: 0;
+}
+h1, h2, h3 {
+    font-family: 'RalewayBold', Arial, serif;
+}
+h1, h2 {
+    font-size: 22px;
+}
+h3 {
+    font-size: 18px;
+}
+header, main, footer {
+    padding: 40px;
+}
+
+/*MENU : LOGO + NAV BARRE*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+}
+#logo {
+    width: auto;
+    height: 40px;
+}
+nav > ul {
+    display: flex;
+}
+nav > ul > li {
+    list-style-type: none;
+    padding-right: 60px;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+/*les onglets*/
+#hebergement {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 40px;
+}
+#activites {
+    color: black;
+}
+#sincrire {
+    font-family: 'RalewayBold';
+    color:  #0065FC;
+}
+/*BARRE DE RECHERCHE*/
+#barreDeRecherche {
+    display: flex;
+    flex-direction: inline;
+    margin-bottom: 30px;
+}
+span#iconeRecherche {
+    display: inline-block;
+    height: 53px;
+    width: 4vw;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #F2F2F2;
+}
+i.fas.fa-map-marker-alt {
+    padding-top: 18px;
+    padding-left: 20px;
+}
+#rechercher {
+    display: inline-block;
+    height: 50px;
+    width: 18vw;
+    border: 1px solid #F2F2F2;
+    padding-left: 10px;
+}
+#rechercher::placeholder {
+    color: rgba(0, 0, 0, 1);
+    font-size: 19px;
+}
+#labelRechercher {
+    display: inline-block;
+    height: 35px;
+    width: 8vw;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+/*FILTRE*/
+#filtre {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+section#filtre > h3 {
+    margin-right: 20px;
+}
+.criteresFiltre {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 20px;
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid #DEEBFF;
+    padding-right: 20px;
+}
+.contourIcones {
+    background-color:#DEEBFF;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    color: #0065FC;
+}
+.fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog {
+    padding-top: 18px;
+    padding-left: 16px;
+}
+section.criteresFiltre > h3 {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+/*Paragraphe info*/
+#sectionInfo {
+    display: flex;
+}
+#contourInfo {
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    border: 1px solid #DEEBFF;
+    margin-top: 5px;
+    color: #0065FC;
+    padding-left: 18px;
+    padding-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fas.fa-info {
+}
+section#sectionInfo > p {
+    padding-left: 20px;
+}
+/*FOOTER*/
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+}
+.sectionFooter {
+    flex-direction: column;
+    padding-right: 220px;
+}
+.sectionFooter > ul {
+    flex-direction: column;
+    padding-left: 0px !important;
+}
+.sectionFooter > ul > li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+.sectionFooter > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
