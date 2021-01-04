@@ -1,0 +1,112 @@
+/*POLICES*/
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('typo/Raleway-Regular.ttf') format('truetype');
+    font-family: 'RalewayBold';
+    src: url('typo/Raleway-Bold.ttf') format('truetype');
+}
+/*GENERAL*/
+body {
+    font-family: 'RalewayRegular', Arial, serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 40px;
+}
+h1, h2, h3 {
+    font-family: 'RalewayBold', Arial, serif;
+}
+h1 {
+    font-size: 22px;
+}
+
+/*MENU : LOGO + NAV BARRE*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+}
+#logo {
+    width: auto;
+    height: 40px;
+}
+nav > ul {
+    display: flex;
+}
+nav > ul > li {
+    list-style-type: none;
+    padding-right: 60px;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+/*les onglets*/
+#hebergement {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 40px;
+}
+#activites {
+    color: black;
+}
+#sincrire {
+    font-family: 'RalewayBold';
+    color:  #0065FC;
+}
+/*BARRE DE RECHERCHE*/
+#barreDeRecherche {
+    display: flex;
+    flex-direction: inline;
+}
+span#iconeRecherche {
+    display: inline-block;
+    height: 53px;
+    width: 4vw;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #F2F2F2;
+}
+i.fas.fa-map-marker-alt {
+    padding-top: 18px;
+    padding-left: 20px;
+}
+#rechercher {
+    display: inline-block;
+    height: 50px;
+    width: 18vw;
+    border: 1px solid #F2F2F2;
+    padding-left: 10px;
+}
+#rechercher::placeholder {
+    color: rgba(0, 0, 0, 1);
+    font-size: 19px;
+}
+#labelRechercher {
+    display: inline-block;
+    height: 35px;
+    width: 8vw;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+#text {
+    display: none !important;
+}
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+.footer {
+    flex-direction: column;
+}
+.footer > ul {
+    flex-direction: column;
+}
+.footer > ul > li {
+    list-style-type: none;
+    padding-left: 0px !important;
+}
