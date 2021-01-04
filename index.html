@@ -9,22 +9,37 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img id="logo" src="img/logoReservia.png" alt="">
+        <nav id="navDesktop">
+            <img id="logo" src="img/logoReservia.png" alt="logoReservia">
             <ul>
                 <li><a id="hebergement" href="#">Hébergements</a></li>
                 <li><a id="activites" href="#">Activités</a></li>
                 <li><a id="sincrire" href="#">S'inscrire</a></li>
             </ul>
         </nav>
+        <nav id="navMobile">
+            <section id="premiereLigneVersionMobile">
+                <img id="logo" src="img/logoReservia.png" alt="logoReservia">
+                <a id="sincrire" href="#">S'inscrire</a>
+            </section>
+            <ul>
+                <li><a id="hebergement" href="#">Hébergements</a></li>
+                <li><a id="activites" href="#">Activités</a></li>
+            </ul>
+        </nav>
         <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <section id="barreDeRecherche">
-            <span id="iconeRecherche">
+            <span id="iconeLocalisation">
                 <i class="fas fa-map-marker-alt"></i>
             </span>
             <input id="rechercher" type="text" placeholder="Marseille, France">
-            <label id="labelRechercher" for="rechercher">Rechercher</label>
+            <label id="labelRechercherDesktop" for="rechercher">Rechercher</label>
+            <label id="labelRechercherMobile" for="rechercher">
+                <span id="iconeRecherche">
+                    <i class="fas fa-search"></i>
+                </span>
+            </label>
         </section>
         <section id="filtre">
             <h3>Filtres</h3>
@@ -32,7 +47,7 @@
                 <span class="contourIcones">
                     <i class="fas fa-money-bill-wave"></i>
                 </span>
-                <h3>Economie</h3>
+                <h3>Économique</h3>
             </section>
             <section class="criteresFiltre">
                 <span class="contourIcones">
