@@ -20,8 +20,19 @@ h1, h2 {
 h3 {
     font-size: 18px;
 }
-header, main, footer {
-    padding: 40px;
+header {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+main {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+footer {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
 }
 a {
     text-decoration: none;
@@ -32,6 +43,9 @@ a {
     display: flex;
     justify-content: space-between;
     padding-bottom: 5vh;
+}
+#navMobile {
+    display: none;
 }
 #logo {
     width: auto;
@@ -95,6 +109,9 @@ i.fas.fa-map-marker-alt {
     padding-top: 18px;
     padding-left: 20px;
 }
+#labelRechercherMobile {
+    display: none;
+}
 /*FILTRE*/
 #filtre {
     display: flex;
@@ -153,11 +170,11 @@ section#sectionInfo > p {
 /*FOOTER*/
 footer {
     display: flex;
+    justify-content: space-between;
     background-color: #F2F2F2;
 }
 .sectionFooter {
     flex-direction: column;
-    padding-right: 220px;
 }
 .sectionFooter > ul {
     flex-direction: column;
@@ -178,6 +195,9 @@ footer {
     }
     #navDesktop {
         display: none;
+    }
+    #navMobile {
+        display: block;
     }
     #premiereLigneVersionMobile {
         display: flex;
@@ -246,15 +266,5 @@ footer {
     }
     .sectionFooter {
         padding-right: 0px;
-    }
-}
-     
-@media (min-width: 1024px){
-     
-    #navMobile {
-        display: none;
-    }
-    #labelRechercherMobile {
-        display: none;
     }
 }
