@@ -21,18 +21,18 @@ h3 {
     font-size: 18px;
 }
 header {
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 main {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 footer {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 a {
     text-decoration: none;
@@ -142,8 +142,8 @@ section#filtre > h3 {
     padding-top: 18px;
     padding-left: 16px;
 }
-section.criteresFiltre > h3 {
-    padding-left: 15px;
+div.criteresFiltre > h3 {
+    padding-left: 10px;
     margin-top: 15px;
 }
 /*Paragraphe info*/
@@ -170,11 +170,12 @@ section#sectionInfo > p {
 /*FOOTER*/
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: #F2F2F2;
 }
 .sectionFooter {
     flex-direction: column;
+    width: 30vw;
 }
 .sectionFooter > ul {
     flex-direction: column;
@@ -188,10 +189,10 @@ footer {
     text-decoration: none;
     color: black;
 }
-/*MEDIA QUERIES*/
+/*FORMAT MOBILE*/
 @media (max-width: 768px){
-    header, main, footer {
-        padding: 20px;
+    main {
+        padding: 30px;
     }
     #navDesktop {
         display: none;
@@ -202,6 +203,7 @@ footer {
     #premiereLigneVersionMobile {
         display: flex;
         justify-content: space-between;
+        padding: 30px;
     }
     #sincrire {
         padding-top: 10px;
@@ -214,6 +216,9 @@ footer {
     #navMobile > ul > li {
         list-style-type: none;
         margin-bottom: 20px;
+    }
+    #labelRechercherMobile {
+        display: block;
     }
     #hebergement {
         border-top: none;
@@ -263,8 +268,10 @@ footer {
     footer {
         flex-wrap: wrap;
         flex-direction: column;
+        padding: 30px;
     }
     .sectionFooter {
         padding-right: 0px;
+        width: 80vw;
     }
 }
