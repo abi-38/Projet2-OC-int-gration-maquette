@@ -138,6 +138,10 @@ section#filtre > h3 {
     border: 1px solid #DEEBFF;
     padding-right: 20px;
 }
+.criteresFiltre:hover {
+    background-color: #0065FC;
+    color: white;
+}
 .contourIcones {
     background-color:#DEEBFF;
     width: 48px;
@@ -170,20 +174,26 @@ div.criteresFiltre > h3 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.fas.fa-info {
-}
 section#sectionInfo > p {
     padding-left: 20px;
 }
 /*SECTION HEBERGEMENT*/
-img {
-    width: 235px;
+.image {
+    display: flex;
+    background-size: cover;
+    width: 16vw; /*235px -> 16%*/
     height: 115px;
     border-radius: 20px 20px 0px 0px;
+    align-items: center;
+    overflow: hidden;
+}
+img {
+    width: 16vw;
+    height: auto;
 }
 #sectionHebergementPopulaire {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 #divHebergement, aside {
     display: flex;
@@ -195,28 +205,28 @@ img {
 }
 #divHebergement {
     width: 60vw;
-    margin-right: 30px;
 }
 aside {
     width: 28vw;
 }
 #divHebergement > h2, #divHebergement > h3 {
     width: 100vw;
-    padding-left: 42.7px;
+    padding-left: 3vw;/*42.7px -> 3%*/
 }
 #divHebergement > h2 {
     margin-bottom: 0px;
     margin-top: 40px;
 }
-#divHebergement > article {
+#divHebergement > a {
     background-color: white;
     padding: 5px;
     margin-left: 15px;
     margin-right: 15px;
     border-radius: 20px;
     height: 200px;
+    color: black;
 }
-#divHebergement > article > h4, #divHebergement > article > p, #divHebergement > article > div {
+#divHebergement > a > h4, #divHebergement > a > p, #divHebergement > a > div {
     margin: 5px;
 }
 .startFull {
@@ -230,10 +240,11 @@ aside {
 /*SECTION LES PLUS POPULAIRES*/
 #articleAside {
     display: flex;
+    width: 100vw;
+    justify-content: space-around;
 }
 .fas.fa-chart-line {
     padding-top: 25px;
-    padding-left: 110px;
 }
 .articleAsideImg {
     display: flex;
@@ -241,20 +252,28 @@ aside {
     padding: 5px;
     border-radius: 20px 20px 20px 20px;
     height: 134px;
-    width: 343px;
+    width: 24vw;/*343px -> 24%*/
 }
-.articleAsideImg > img {
-    width: 126px;
+.articleAsideImg > .imagesAside {
+    display: flex;
+    width: 9vw; /*126px -> 9%*/
     height: 134px;
     border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+    align-items: center;
+}
+.articleAsideImg > img {
+    width: auto;
+    height: 135px;
 }
 .articleAsideImg > div {
-    padding-left: 10px;
-    width: 157px;
+    width: 11vw; /*157px -> 11%*/
 }
 .articleAsideImg > div > h4, .articleAsideImg > div > p {
     margin: 5px;
     margin-top: 10px;
+    color: black;
+    padding-left: 10px;
 }
 .divAsideStart {
     margin-left: 10px;
@@ -271,23 +290,49 @@ aside {
 }
 .divActivites > h4 {
     padding-left: 20px;
-    padding-bottom: 15px;
 }
 .divActivites {
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
 }
+.doublesCartes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divGrandeImage {
+    height: 390px;
+    width: 21vw; /*300px -> 21%*/
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+}
 .imgGrandeActivites {
     height: 390px;
-    width: 300px;
+    width: auto;
+}
+.divMoyenneImage {
+    display: flex;
+    height: 180px;
+    width: 21vw;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+    align-items: center;
 }
 .imgMoyenneActivites {
-    height: 180px;
-    width: 300px;
+    height: auto;
+    width: 21vw;
+}
+.divPetiteImage {
+    display: flex;
+    height: 108px;
+    width: 21vw;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+    align-items: center;
 }
 .imgPetiteActivites {
-    height: 108px;
-    width: 300px;
+    height: auto;
+    width: 21vw;
 }
 /*FOOTER*/
 footer {
@@ -297,7 +342,8 @@ footer {
 }
 .sectionFooter {
     flex-direction: column;
-    width: 30vw;
+    width: 32vw;
+    padding-top: 20px;
 }
 .sectionFooter > ul {
     flex-direction: column;
@@ -310,6 +356,16 @@ footer {
 .sectionFooter > ul > li > a {
     text-decoration: none;
     color: black;
+}
+/*FORMAT PETIT ECRAN*/
+@media (max-width: 1250px) {
+    /*revoir tous les % ? -> 100% = 1009*/
+    .image {
+        width: 15vw; /*235px -> 16%*/
+    }
+    .image> img {
+        width: 15vw;
+    }
 }
 /*FORMAT MOBILE*/
 @media (max-width: 768px){
