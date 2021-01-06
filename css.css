@@ -8,20 +8,20 @@
 /*GENERAL*/
 body {
     font-family: 'RalewayRegular', Arial, serif;
-    font-size: 16px;
+    font-size: 1em;/*taille police 16px passage en em 1em*/
     margin: 0;
 }
 h1, h2, h3 {
     font-family: 'RalewayBold', Arial, serif;
 }
 h1, h2 {
-    font-size: 22px;
+    font-size: 1.375em;/*taille police 22px passage en em 1.375em*/
 }
 h3 {
-    font-size: 18px;
+    font-size: 1.125em;/*taille police 18px passage en em 1.125em*/
 }
 h4 {
-    font-size: 16px;
+    font-size: 1em;/*taille police 16px passage en em 1em*/
 }
 header {
     padding-top: 30px;
@@ -39,11 +39,11 @@ footer {
 }
 a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;/*taille police 16px passage en em 1em*/
 }
 em {
     font-family: 'RalewayBold', Arial, serif;
-    font-size: 14px;
+    font-size: 0.875em;/*taille police 14px passage en em 0.875em*/
 }
 /*MENU : LOGO + NAV BARRE*/
 #navDesktop {
@@ -104,7 +104,7 @@ i.fas.fa-map-marker-alt {
 }
 #rechercher::placeholder {
     color: rgba(0, 0, 0, 1);
-    font-size: 19px;
+    font-size: 1.188em;/*taille police 19px passage en em 1.188em*/
 }
 #labelRechercherDesktop {
     display: inline-block;
@@ -231,11 +231,11 @@ aside {
 }
 .startFull {
     color: #0065FC;
-    font-size: 11px;
+    font-size: 0.688em;/*taille police 11px passage en em 0.688em*/
 }
 .startEmpty {
     color: #F2F2F2;
-    font-size: 13px;
+    font-size: 0.813em;/*taille police 13px passage en em 0.813em*/
 }
 /*SECTION LES PLUS POPULAIRES*/
 #articleAside {
@@ -370,7 +370,11 @@ footer {
 /*FORMAT MOBILE*/
 @media (max-width: 768px){
     main {
-        padding: 30px;
+        padding: 0px;
+    }
+    #sectionTitre, #filtre, #sectionInfo {
+        margin-left: 15px;
+        margin-right: 15px;
     }
     #navDesktop {
         display: none;
@@ -443,6 +447,76 @@ footer {
         margin-right: 10px;
         margin-bottom: 20px;
     }
+    /*Les plus populaire - version mobile*/
+    #sectionHebergementPopulaire {
+        flex-direction: column-reverse;
+    }
+    #divHebergement, aside {
+        width: 100vw;
+        border-radius: 0px;
+    }
+    #articleAside {
+        margin-top: 15px;
+    }
+    .articleAsideImg {
+        width: 85vw;
+    }
+    .articleAsideImg > .imagesAside {
+        width: 28vw;
+    }
+    img {
+        width: auto;
+        height: 133px;
+    }
+    #imageAsideToutBleu {
+        width: 133px;
+        height: auto;
+    }
+    .articleAsideImg > div {
+        width: 45vw;
+    }
+    /*Hébergements - version mobile*/
+    #divHebergement {
+        background-color: white;
+        flex-direction: column;
+        height: auto;
+    }
+    #divHebergement > a {
+        width: 86vw;
+        border-radius: 25px;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.07);
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .image {
+        width: 85vw;
+    }
+    .image > img {
+        width: 85vw;
+        height: auto;
+    }
+    /*Activités - version mobile*/
+    #sectionActivites {
+        flex-direction: column;
+        align-items: center;
+    }
+    #sectionActivites > h2 {
+        margin-left: 0px;
+    }
+    .divGrandeImage, .divMoyenneImage, .divPetiteImage {
+        width: 85vw;
+        height: 140px;
+    }
+    .imgGrandeActivites, .imgMoyenneActivites, .imgPetiteActivites {
+        width: 85vw;
+        height: auto;
+    }
+    .divActivites {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    /*Footer - version mobile*/
     footer {
         flex-wrap: wrap;
         flex-direction: column;
