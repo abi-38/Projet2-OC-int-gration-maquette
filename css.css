@@ -54,7 +54,7 @@ em {
 #navMobile {
     display: none;
 }
-#logo {
+.logo {
     width: auto;
     height: 40px;
 }
@@ -66,15 +66,15 @@ nav > ul {
     padding-right: 60px;
 }
 /*les onglets*/
-#hebergement {
+.hebergement {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 40px;
 }
-#activites {
+.activites {
     color: black;
 }
-#sincrire {
+.sincrire {
     font-family: 'RalewayBold';
     color: #0065FC;
 }
@@ -490,10 +490,10 @@ footer {
         justify-content: space-between;
         padding: 30px;
     }
-    #sincrire {
+    .sincrire {
         padding-top: 10px;
     }
-    #hebergement {
+    .hebergement {
         border-top: none;
         padding-top: 0px;
         border-bottom: 2px solid #0065FC;
@@ -501,7 +501,7 @@ footer {
         padding-right: 40px;
         padding-bottom: 10px;
     }
-    #activites {
+    .activites {
         border-bottom: 2px solid #F2F2F2;
         padding-bottom: 10px;
         padding-left: 40px;
