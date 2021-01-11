@@ -72,7 +72,7 @@ nav > ul {
     list-style-type: none;
     padding-right: 60px;
 }
-/*les onglets*/
+/*ONGLETS NAV*/
 .hebergement {
     color: #0065FC;
     border-top: 2px solid #0065FC;
@@ -165,7 +165,7 @@ div.criteresFiltre > h3 {
     padding-left: 10px;
     margin-top: 15px;
 }
-/*Paragraphe info*/
+/*PARTIE INFO*/
 #sectionInfo {
     display: flex;
     margin-bottom: 40px;
@@ -185,7 +185,7 @@ div.criteresFiltre > h3 {
 section#sectionInfo > p {
     padding-left: 1.4vw;
 }
-/*SECTION HEBERGEMENT*/
+/*SECTION HEBERGEMENTS*/
 .image {
     display: flex;
     background-size: cover;
@@ -378,9 +378,9 @@ footer {
     text-decoration: none;
     color: black;
 }
-/*FORMAT PETIT ECRAN*/
+/*VERSION TABLETTE*/
 @media (max-width: 1111px) {
-    /*général - version mobile*/
+    /*Général - version tablette*/
     main {
         padding-left: 0vw;
         padding-right: 0vw;
@@ -398,7 +398,7 @@ footer {
         margin-bottom: 20px;
         padding-right: 9px;
     }
-    /*Hébergement et plus populaire - version tablette*/
+    /*Hébergements et les plus populaires - version tablette*/
     #sectionHebergementPopulaire {
         flex-wrap: wrap;
     }
@@ -454,7 +454,7 @@ footer {
     .fas.fa-chart-line {
         margin-top: 1px;
     }
-    /*les activités - version tablette*/
+    /*Activités - version tablette*/
     #sectionActivites > h2 {
         width: 85vw;
         text-align: left;
@@ -485,7 +485,7 @@ footer {
 }
 /*FORMAT MOBILE*/
 @media (max-width: 626px){
-    /*menu - version mobile*/
+    /*Menu - version mobile*/
     #navDesktop {
         display: none;
     }
@@ -523,7 +523,7 @@ footer {
         list-style-type: none;
         margin-bottom: 20px;
     }
-    /*recherche - version mobile*/
+    /*Barre de recherche - version mobile*/
     #labelRechercherMobile {
         display: block;
     }
@@ -545,11 +545,11 @@ footer {
         padding-top: 19px;
         padding-left: 18px;
     }
-    /*filtre - version mobile*/
+    /*Filtre - version mobile*/
     section#filtre > h3 {
         width: 90vw;
     }
-    /*partie info - version mobile*/
+    /*Partie info - version mobile*/
     #contourInfo {
         width: 6px;
         height: 6px;
@@ -558,7 +558,7 @@ footer {
         margin-top: 10px;
         font-size: 13px;
     }
-    /*Les plus populaire - version mobile*/
+    /*Les plus populaires - version mobile*/
     #sectionHebergementPopulaire {
         flex-direction: column-reverse;
     }
