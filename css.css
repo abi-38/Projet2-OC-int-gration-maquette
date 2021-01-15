@@ -160,7 +160,8 @@ section#filtre > h3 {
 }
 .fas.fa-money-bill-wave, .fas.fa-child, .fas.fa-heart, .fas.fa-dog {
     padding-top: 18px;
-    padding-left: 16px;
+    display: flex;
+    justify-content: center;
 }
 div.criteresFiltre > h3 {
     padding-left: 10px;
