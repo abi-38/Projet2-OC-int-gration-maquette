@@ -49,6 +49,7 @@ footer {
 a {
     text-decoration: none;
     font-size: 1em;
+    color: black;
 }
 mark {
     font-family: 'RalewayItalic', Arial, serif;
