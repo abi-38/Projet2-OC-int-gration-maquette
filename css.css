@@ -4,6 +4,8 @@
     src: url('typo/Raleway-Regular.ttf') format('truetype');
     font-family: 'RalewayBold';
     src: url('typo/Raleway-Bold.ttf') format('truetype');
+    font-family: 'RalewayItalic';
+    src: url('typo/Raleway-Italic.ttf') format('truetype');
 }
 /*GENERAL*/
 body {
@@ -48,9 +50,9 @@ a {
     text-decoration: none;
     font-size: 1em;
 }
-em {
-    font-family: 'RalewayBold', Arial, serif;
-    font-size: 0.875em;
+mark {
+    font-family: 'RalewayItalic', Arial, serif;
+    background-color: transparent;
 }
 /*MENU : LOGO + NAV BARRE*/
 #navDesktop {
@@ -82,7 +84,6 @@ nav > ul {
     color: black;
 }
 .sincrire {
-    font-family: 'RalewayBold';
     color: #0065FC;
 }
 /*BARRE DE RECHERCHE*/
@@ -163,6 +164,7 @@ section#filtre > h3 {
 }
 div.criteresFiltre > h3 {
     padding-left: 10px;
+    padding-right: 10px;
     margin-top: 15px;
 }
 /*PARTIE INFO*/
@@ -196,7 +198,7 @@ section#sectionInfo > p {
     align-items: center;
     overflow: hidden;
 }
-img {
+.image > img {
     width: 16vw;
     height: auto;
 }
@@ -270,23 +272,22 @@ aside {
     background-color: white;
     padding: 5px;
     border-radius: 20px 20px 20px 20px;
-    height: 134px;
     width: 24vw;
+    height: 134px;
 }
 .lienAside > .divAside {
-    display: flex;
+    border-radius: 20px 0px 0px 20px;
     width: 9vw;
     height: 134px;
-    border-radius: 20px 0px 0px 20px;
-    overflow: hidden;
-    align-items: center;
+    overflow: hidden;;
 }
-.lienAside > img {
-    width: auto;
-    height: 135px;
+.lienAside > .divAside > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .lienAside > div {
-    width: 11vw;
+    width: 15vw;
 }
 .lienAside > div > h4, .lienAside > div > p {
     margin: 5px;
@@ -323,38 +324,51 @@ aside {
     justify-content: space-between;
 }
 .divGrandeImage {
-    height: 390px;
     width: 21vw;
+    height: 464px;
     overflow: hidden;
     border-radius: 20px 20px 0px 0px;
+    position: relative;
 }
 .imgGrandeActivites {
-    height: 390px;
     width: auto;
+    height: 508px;
+    position: absolute;
+    left: -200px;
+}
+#divFort {
+    border-radius: 20px 20px 0px 0px;
+    width: 21vw;
+    height: 225px;
+    overflow: hidden;
+}
+#imgFort {
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
 }
 .divMoyenneImage {
-    display: flex;
-    height: 180px;
-    width: 21vw;
-    overflow: hidden;
     border-radius: 20px 20px 0px 0px;
-    align-items: center;
+    width: 21vw;
+    height: 180px;
+    overflow: hidden;
 }
 .imgMoyenneActivites {
-    height: auto;
-    width: 21vw;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
 }
 .divPetiteImage {
-    display: flex;
-    height: 108px;
-    width: 21vw;
-    overflow: hidden;
     border-radius: 20px 20px 0px 0px;
-    align-items: center;
+    width: 21vw;
+    height: 108px;
+    overflow: hidden;
 }
 .imgPetiteActivites {
-    height: auto;
-    width: 21vw;
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+
 }
 /*FOOTER*/
 footer {
@@ -363,7 +377,6 @@ footer {
     background-color: #F2F2F2;
 }
 .sectionFooter {
-    flex-direction: column;
     width: 32vw;
     padding-top: 30px;
 }
@@ -390,14 +403,17 @@ footer {
         margin-left: 2.3vw;
         margin-right: 2.3vw;
     }
+    #filtre {
+        margin-left: 2vw;
+    }
     /*Filtre - version tablette*/
     #filtre {
         flex-wrap: wrap;
     }
     .criteresFiltre {
-        margin-right: 6px;
+        margin-right: 20px;
         margin-bottom: 20px;
-        padding-right: 9px;
+        padding-right: 7px;
     }
     /*Hébergements et les plus populaires - version tablette*/
     #sectionHebergementPopulaire {
@@ -412,7 +428,7 @@ footer {
         background-color: white;
     }
     #divHebergement > a {
-        width: 30vw;
+        width: 40vw;
         border-radius: 25px;
         box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.07);
         padding: 5px;
@@ -420,10 +436,10 @@ footer {
         margin-bottom: 20px;
     }
     .image {
-        width: 30vw;
+        width: 40vw;
     }
     .image > img {
-        width: 30vw;
+        width: 40vw;
         height: auto;
     }
     .lienAside {
@@ -431,19 +447,10 @@ footer {
         margin-bottom: 20px;
     }
     .lienAside > .divAside {
-        width: 28vw;
+        width: 22vw;
     }
     .lienAside > div {
         width: 45vw;
-    }
-    img {
-        width: auto;
-        height: 133px;
-        justify-content: center;
-    }
-    #imgAside {
-        width: 37vw;
-        height: auto;
     }
     #articleAside {
         margin-top: 15px;
@@ -461,23 +468,30 @@ footer {
         text-align: left;
         padding-left: 0px;
     }
-    .divGrandeImage, .divMoyenneImage, .divPetiteImage {
+    .divGrandeImage {
+        height: 400px;
+        width: 44vw;
+    }
+    .divMoyenneImage {
+        width: 44vw;
+        height: 155px;
+    }
+    .divPetiteImage {
         width: 44vw;
         height: 90px;
-        display: flex;
-        align-items: center;
     }
-    .divGrandeImage {
-        height: 240px;
-        width: 360px;
+    #divFort {
+        width: 44vw;
     }
     .imgMoyenneActivites, .imgPetiteActivites {
-        width: 44vw;
-        height: auto;
+        width: 135%;
+        height: 100%;
+        object-fit: cover;
     }
     .imgGrandeActivites {
-        width: auto;
-        height: 240px;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
     }
     .divActivites {
         margin-top: 15px;
@@ -485,6 +499,11 @@ footer {
     }
 }
 /*FORMAT MOBILE*/
+@media (max-width: 700px){
+    #sectionActivites {
+        justify-content: center;
+    }
+}
 @media (max-width: 626px){
     /*Menu - version mobile*/
     #navDesktop {
@@ -529,7 +548,7 @@ footer {
         display: block;
     }
     #rechercher {
-        width: 230px;
+        width: 200px;
     }
     #labelRechercherDesktop {
         display: none;
@@ -543,7 +562,7 @@ footer {
         border-radius: 20px 20px 20px 20px;
         position: absolute;
         top: 316px;
-        left: 278px;
+        left: 254px;
     }
     .fas.fa-search {
         padding-top: 19px;
@@ -552,6 +571,9 @@ footer {
     /*Filtre - version mobile*/
     section#filtre > h3 {
         width: 90vw;
+    }
+    .criteresFiltre {
+        margin-right: 15px;
     }
     /*Partie info - version mobile*/
     #contourInfo {
@@ -569,6 +591,9 @@ footer {
     /*Les plus populaires - version mobile*/
     #sectionHebergementPopulaire {
         flex-direction: column-reverse;
+    }
+    .lienAside > .divAside {
+        width: 40vw;
     }
     /*Hébergements - version mobile*/
     #divHebergement {
@@ -598,19 +623,32 @@ footer {
         text-align: left;
         padding-left: 0px;
     }
-    .divGrandeImage, .divMoyenneImage, .divPetiteImage {
+    #divFort, .divMoyenneImage, .divPetiteImage {
         width: 85vw;
-        height: 140px;
-        display: flex;
-        align-items: center;
+        height: 130px;
+        position: relative;
     }
-    .imgGrandeActivites, .imgMoyenneActivites, .imgPetiteActivites {
+    .imgMoyenneActivites, .imgPetiteActivites {
+        width: 104vw;
+        height: 177px;
+        position: absolute;
+        left: -31px;
+        top: -1px;
+    }
+    .divGrandeImage {
         width: 85vw;
-        height: auto;
+        height: 130px;
+    }
+    .imgGrandeActivites {
+        width: 139vw;
+        height: 240px;
+        top: -38px;
+        left: -106px;
     }
     .divActivites {
         margin-top: 15px;
         margin-bottom: 15px;
+        height: 188px;
     }
     /*Footer - version mobile*/
     footer {
@@ -621,5 +659,18 @@ footer {
     .sectionFooter {
         padding-right: 0px;
         width: 80vw;
+    }
+}
+@media (max-width: 380px){
+    div.criteresFiltre > h3 {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .criteresFiltre {
+        margin-right: 2px;
+        padding-right: 3px;
+    }
+    .lienAside > .divAside {
+        width: 40vw;
     }
 }
