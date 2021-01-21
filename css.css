@@ -2,8 +2,12 @@
 @font-face {
     font-family: 'RalewayRegular';
     src: url('typo/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
     font-family: 'RalewayBold';
     src: url('typo/Raleway-Bold.ttf') format('truetype');
+}
+@font-face {
     font-family: 'RalewayItalic';
     src: url('typo/Raleway-Italic.ttf') format('truetype');
 }
